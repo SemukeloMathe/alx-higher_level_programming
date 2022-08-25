@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-def add(a, b):
-    return a+b
-
+import add_0 as add
 
 a = 1
 b = 2
-print(f"{a:d} + {b:d} = {add(a,b):d}")
+total = add.add(a, b)
+print(f"{a:d} + {b:d} = {total:d}")
