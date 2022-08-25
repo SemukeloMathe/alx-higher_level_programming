@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import add_0 as add
-
-a = 1
-b = 2
-total = add.add(a, b)
-print(f"{a:d} + {b:d} = {total:d}")
+if __name__ == "--main__":
+    from add_0 import add
+    a = 1
+    b = 2
+    print(f"{a:d} + {b:d} = {add(a, b):d}")
