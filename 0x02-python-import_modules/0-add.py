@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-if __name__ == "--main__":
-    from add_0 import add
+if __name__ == "__main__":
+    import add_0 as ad
+
     a = 1
     b = 2
-    print("{} + {} = {}".format(a, b, add(a, b)))
+    sum1 = ad.add(a, b)
+    print("{} + {} = {}".format(a, b, sum1))
