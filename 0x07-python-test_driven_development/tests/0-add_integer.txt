@@ -39,13 +39,3 @@ Now we will use:
 	...    print(e)
 	...
 	a must be an integer
-
-	>>> print(add_integer(5, 9))
-	14
-
-	>>> try:
-	...	print(add_integer('True'))
-	... except Exception as e:
-	...	print(e)
-	...
-	a must be an integer
