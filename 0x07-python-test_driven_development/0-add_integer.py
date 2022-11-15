@@ -14,7 +14,7 @@ def add_integer(a, b=98):
 
     if isinstance(a, str):
         raise TypeError("a must be an integer")
-    
+
     elif isinstance(b, str):
         raise TypeError("b must be an integer")
 
@@ -25,6 +25,5 @@ def add_integer(a, b=98):
 
     else:
         raise TypeError("a must be an integer")
-    
-    
+
     return a + b
