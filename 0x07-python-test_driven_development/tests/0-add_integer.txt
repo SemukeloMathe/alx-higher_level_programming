@@ -1,13 +1,19 @@
-This is the test module for ``add_integer``
+This is the test module for 'add_integer.txt'
 ===========================================
 
-We will first import the module
--------------------------------
+It contains only one function called ``add_integer()``
 
-	>>> from test_add_integer import add_integer
+``add_integer()`` returns the sum of its arguments.
+---------------------------------------------------
+
+::
+
+	>>> add_integer = __import__('0-add_integer').add_integer
 
 Now we will use:
-	
+
+::
+
 	>>> print(add_integer(1, 2))
 	3
 
@@ -37,4 +43,9 @@ Now we will use:
 	>>> print(add_integer(5, 9))
 	14
 
-
+	>>> try:
+	...	print(add_integer('True'))
+	... except Exception as e:
+	...	print(e)
+	...
+	a must be an integer
