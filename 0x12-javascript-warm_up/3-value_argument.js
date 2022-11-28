@@ -3,7 +3,7 @@ const cmdArgs = process.argv;
 let count = 0;
 
 cmdArgs.forEach((val) => {
-  count += 1
+  count += 1;
 });
 
 if (count <= 2) {
