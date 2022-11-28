@@ -1,8 +1,6 @@
 #!/usr/bin/node
-const cmdArgs = process.argv
-const arg1 = parseInt(cmdArgs[2]);
+function factorial (n) {
+  return n === 0 || isNaN(n) ? 1 : n * factorial(n - 1);
+}
 
-if (arg1 === 0 || arg1 == 1) {
-  console.log(1);
-} else {
-  
+console.log(factorial(Number(process.argv[2]))); 

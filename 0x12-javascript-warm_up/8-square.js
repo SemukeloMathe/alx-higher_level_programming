@@ -1,13 +1,17 @@
 #!/usr/bin/node
-const cmdArgs = process.argv;
-const arg1 = parseInt(cmdArgs[2]);
-let x = 0;
+const x = process.argv[2];
 
-if (cmdArgs.length <= 2) {
+if (!parseInt(x)) {
   console.log('Missing size');
 } else {
-  while (x < arg1) {
-    console.log('X');
-    x++;
+  for (let i = 0; i < x; i++) {
+    let y = 0;
+    let myVar = '';
+
+    while (y < x) {
+      myVar = myVar + 'X';
+      y++;
+    }
+    console.log(myVar);
   }
 }

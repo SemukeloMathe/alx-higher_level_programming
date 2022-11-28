@@ -1,21 +1,10 @@
 #!/usr/bin/node
-const cmdArgs = process.argv;
-let x = 2;
-let biggest = cmdArgs[2];
-let secondBiggest = 0;
-
-if (cmdArgs.length <= 3) {
-  secondBiggest = 0;
+if (process.argv.length <= 3) {
+  console.log(0);
 } else {
-  while (x < cmdArgs.length) {
-    if (cmdArgs[x] > biggest) {
-      secondBiggest = biggest;
-      biggest = cmdArgs[x];
-    }
-    if (secondBiggest < cmdArgs[x] < biggest) {
-      secondBiggest = cmdArgs[x];
-    }
-    x++;
-  }
+  const args = process.argv
+    .map(Number)
+    .slice(2, process.argv.length)
+    .sort((a, b) => a - b);
+  console.log(args[args.length - 2]);
 }
-console.log(secondBiggest);
